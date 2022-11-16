@@ -37,7 +37,7 @@ plt.scatter(f1,f2)
 plt.show()
 ```
 Приведенный выше код просто отображает все значения в первом столбце массива X относительно всех значений во втором столбце. График будет выглядеть так:  
-![Рисунок 1](https://github.com/RockyCurosaki/Lab_clustering/raw/main/ris1.png)  
+![Рисунок 1](relative/path/in/repository/to/ris1.png)  
 Далее осуществляется создание кластеров и подгонка входных данных
 ```Python
 kmeans = KMeans(n_clusters=3)
@@ -57,8 +57,8 @@ print(centroids)
 plt.scatter(f1, f2, c=kmeans.labels_, cmap='rainbow')
 plt.scatter(kmeans.cluster_centers_[:,0] ,kmeans.cluster_centers_[:,1], color='black')
 plt.show()
-```  
-![Рисунок 2](https://github.com/RockyCurosaki/Lab_clustering/raw/main/ris2.png)  
+```
+![Рисунок 2](relative/path/in/repository/to/ris2.png)  
 Кластеризация K-средних – это простой, но очень эффективный алгоритм неконтролируемого машинного обучения для кластеризации данных. Он группирует данные на основе евклидова расстояния между точками данных. Алгоритм кластеризации K-средних имеет множество применений для группировки текстовых документов, изображений, видео и многого другого.
 
 
